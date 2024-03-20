@@ -39,7 +39,7 @@ Il secondo screenshot riguarda l'esercizio con bonus, mostrate nella lista album
 
         <nav class="d-flex align-items-center    ">
            <div class ="logoContainer"><img class="spoty-logo" src="./img/spotify-logo.png" alt=""></div>
-            <h1 class="container">Php Dischi Collection</h1>   
+             
         </nav>
 
         <div class= "wrapper">
