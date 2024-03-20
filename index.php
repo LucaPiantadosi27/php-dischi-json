@@ -37,7 +37,8 @@ Il secondo screenshot riguarda l'esercizio con bonus, mostrate nella lista album
 <body>
     <div id="app">
 
-        <nav class="d-flex align-items-center ">
+        <nav class="d-flex align-items-center    ">
+           <div class ="logoContainer"><img class="spoty-logo" src="./img/spotify-logo.png" alt=""></div>
             <h1 class="container">Php Dischi Collection</h1>   
         </nav>
 
@@ -52,7 +53,7 @@ Il secondo screenshot riguarda l'esercizio con bonus, mostrate nella lista album
                             <div id="albumImage">
                             <img :src="album.poster" alt="Album Poster">
                             </div>
-                            <h2>{{ album.title }}</h2>
+                            <h3>{{ album.title }}</h3>
                             <p>{{ album.author }}</p>
                             <p>{{ album.year }}</p> 
                         </div>

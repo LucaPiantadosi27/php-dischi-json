@@ -13,7 +13,19 @@ nav {
   
 
 }
-
+.logoContainer{
+    
+    width: 30px;
+    height: auto; 
+    position: relative;
+    
+}
+.logoContainer img{
+   
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
 .container{
     align-items:  center;
 }
