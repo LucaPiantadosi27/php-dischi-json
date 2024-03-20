@@ -19,7 +19,8 @@ Il secondo screenshot riguarda l'esercizio con bonus, mostrate nella lista album
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!-- css -->
+<link rel="stylesheet" href="css/style.css">
 <!-- bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <!-- vue 3 -->
@@ -36,19 +37,25 @@ Il secondo screenshot riguarda l'esercizio con bonus, mostrate nella lista album
 <body>
     <div id="app">
 
+        <nav class="d-flex align-items-center ">
+            <h1 class="container">Php Dischi Collection</h1>   
+        </nav>
+
         <div class= "wrapper">
 
             <div class="container">
                 
                 <div class="row ">
 
-                    <div v-for="album in albums" class="album">
-                        
-                        <img :src="album.poster" alt="Album Poster">
-                        <h2>{{ album.title }}</h2>
-                        <p>{{ album.author }}</p>
-                        <p>{{ album.year }}</p> 
-
+                    <div v-for="album in albums" class="col-4 text-center">
+                        <div id="albumCard">
+                            <div id="albumImage">
+                            <img :src="album.poster" alt="Album Poster">
+                            </div>
+                            <h2>{{ album.title }}</h2>
+                            <p>{{ album.author }}</p>
+                            <p>{{ album.year }}</p> 
+                        </div>
                     </div>
 
                 </div>  

@@ -1,0 +1,51 @@
+:root { 
+    --nav-height: 80px;
+    --bg-color: rgb(29, 45, 60);
+    --nav-color: rgb(6, 19, 31);
+    --bg-card: rgb(17, 32, 48);
+   
+}
+
+nav {
+    color: white;
+    height: var(--nav-height);
+    background-color: var(--nav-color);
+  
+
+}
+
+.container{
+    align-items:  center;
+}
+.wrapper {
+    padding-top: 25px;
+    width: 100%;
+    height: calc(100vh - var(--nav-height));
+    overflow-y: auto;
+    background-color: var(--bg-color);
+}
+
+#albumImage{
+    /* background-color: brown; */
+    width: 350px;
+    height: auto; 
+    position: relative
+}
+#albumImage img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+.row{
+    margin-top: 2rem;
+}
+
+
+#albumCard {
+    background-color: var(--bg-card);    
+    color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    height: calc(100% - 2rem);
+
+}
